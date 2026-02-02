@@ -8,5 +8,10 @@
   - Jairo Llopis
   - Alexandre Díaz
   - Carlos Roca
+<<<<<<< HEAD
 - [Heliconia Solutions Pvt. Ltd.](https://www.heliconia.io)
   - Bhavesh Heliconia
+=======
+- [PyTech](https://www.pytech.it):
+  - Simone Rubino \<<simone.rubino@pytech.it>\>
+>>>>>>> 177d4827c ([IMP] web_company_color: Compile SCSS)
