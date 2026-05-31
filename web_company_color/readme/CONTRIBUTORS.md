@@ -14,4 +14,8 @@
 =======
 - [PyTech](https://www.pytech.it):
   - Simone Rubino \<<simone.rubino@pytech.it>\>
+<<<<<<< HEAD
 >>>>>>> 177d4827c ([IMP] web_company_color: Compile SCSS)
+=======
+- Marwan Behillil \<<marwan.behillil@gmail.com>>
+>>>>>>> 72a97e398 ([FIX] web_company_color: load webp plugin to handle webp logos)
