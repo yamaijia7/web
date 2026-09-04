@@ -66,18 +66,22 @@ class ResCompany(models.Model):
           }
         }
         .btn-primary:not(.disabled),
-        .ui-autocomplete .ui-menu-item > a.ui-state-active {
+        .ui-autocomplete .ui-menu-item > a.ui-state-active,
+        .o-autocomplete--dropdown-menu .o-autocomplete--dropdown-item.focus {
           color: %(color_button_text)s !important;
           background-color: %(color_button_bg)s !important;
           border-color: %(color_button_bg)s !important;
         }
         .ui-autocomplete .ui-menu-item > a.ui-state-active .o-autocomplete--mark,
-        .ui-autocomplete .ui-menu-item > a.ui-state-active mark {
+        .ui-autocomplete .ui-menu-item > a.ui-state-active mark,
+        .o-autocomplete--dropdown-menu .o-autocomplete--dropdown-item.focus * {
           color: %(color_button_text)s !important;
           background-color: transparent !important;
         }
         .btn-primary:hover:not(.disabled),
-        .ui-autocomplete .ui-menu-item > a.ui-state-active:hover {
+        .ui-autocomplete .ui-menu-item > a.ui-state-active:hover,
+        .o-autocomplete--dropdown-menu .o-autocomplete--dropdown-item:hover,
+        .o-autocomplete--dropdown-menu .o-autocomplete--dropdown-item:hover * {
           color: %(color_button_text)s !important;
           background-color: %(color_button_bg_hover)s !important;
           border-color: %(color_button_bg_hover)s !important;
