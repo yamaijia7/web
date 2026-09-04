@@ -71,6 +71,11 @@ class ResCompany(models.Model):
           background-color: %(color_button_bg)s !important;
           border-color: %(color_button_bg)s !important;
         }
+        .ui-autocomplete .ui-menu-item > a.ui-state-active .o-autocomplete--mark,
+        .ui-autocomplete .ui-menu-item > a.ui-state-active mark {
+          color: %(color_button_text)s !important;
+          background-color: transparent !important;
+        }
         .btn-primary:hover:not(.disabled),
         .ui-autocomplete .ui-menu-item > a.ui-state-active:hover {
           color: %(color_button_text)s !important;

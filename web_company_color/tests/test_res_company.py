@@ -159,3 +159,17 @@ class TestResCompany(common.TransactionCase):
             [("url", "=", company.scss_get_url())]
         )
         self.assertFalse(attachment, "attachment should not have been regenerated")
+
+    def test_scss_autocomplete_mark_visibility(self):
+        """Regression: .o-autocomplete--mark must be readable on active items."""
+        company = self.env.company
+        color = "#FF0000"
+        company.company_colors = {"color_button_text": color}
+        company.scss_create_or_update_attachment()
+        attachment = self.env["ir.attachment"].search(
+            [("url", "=", company.scss_get_url())]
+        )
+        css = base64.b64decode(attachment.datas).decode()
+        self.assertIn(".o-autocomplete--mark", css)
+        self.assertIn(color, css)
+        self.assertIn("background-color: transparent", css)
