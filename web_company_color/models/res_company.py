@@ -66,25 +66,30 @@ class ResCompany(models.Model):
           }
         }
         .btn-primary:not(.disabled),
-        .ui-autocomplete .ui-menu-item > a.ui-state-active,
-        .o-autocomplete--dropdown-menu .o-autocomplete--dropdown-item.focus {
+        .ui-autocomplete .ui-menu-item > a.ui-state-active {
           color: %(color_button_text)s !important;
           background-color: %(color_button_bg)s !important;
           border-color: %(color_button_bg)s !important;
         }
         .ui-autocomplete .ui-menu-item > a.ui-state-active .o-autocomplete--mark,
         .ui-autocomplete .ui-menu-item > a.ui-state-active mark,
-        .o-autocomplete--dropdown-menu .o-autocomplete--dropdown-item.focus * {
+        .ui-autocomplete .ui-menu-item > a.ui-state-active .text-primary,
+        .ui-autocomplete .ui-menu-item > a.ui-state-active .text-muted {
           color: %(color_button_text)s !important;
           background-color: transparent !important;
         }
         .btn-primary:hover:not(.disabled),
-        .ui-autocomplete .ui-menu-item > a.ui-state-active:hover,
-        .o-autocomplete--dropdown-menu .o-autocomplete--dropdown-item:hover,
-        .o-autocomplete--dropdown-menu .o-autocomplete--dropdown-item:hover * {
+        .ui-autocomplete .ui-menu-item > a.ui-state-active:hover {
           color: %(color_button_text)s !important;
           background-color: %(color_button_bg_hover)s !important;
           border-color: %(color_button_bg_hover)s !important;
+        }
+        .ui-autocomplete .ui-menu-item > a.ui-state-active:hover .o-autocomplete--mark,
+        .ui-autocomplete .ui-menu-item > a.ui-state-active:hover mark,
+        .ui-autocomplete .ui-menu-item > a.ui-state-active:hover .text-primary,
+        .ui-autocomplete .ui-menu-item > a.ui-state-active:hover .text-muted {
+          color: %(color_button_text)s !important;
+          background-color: transparent !important;
         }
         .o_searchview .o_searchview_facet .o_searchview_facet_label {
           color: %(color_button_text)s !important;
